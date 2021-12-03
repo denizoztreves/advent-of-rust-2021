@@ -24,7 +24,7 @@ fn read_measurements() -> Vec<i32> {
         .collect()
 }
 
-fn count(measurements: Vec<i32>) -> i32 { // todo : make this as reciever so can be called after map()
+fn count(measurements: Vec<i32>) -> i32 { // todo : make this as receiver so can be called after map()
     let mut increase_count = 0;
     for i in 0..(measurements.len() - 1) {
         if measurements[i] < measurements[i + 1] {
